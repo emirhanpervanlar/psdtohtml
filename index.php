@@ -1,12 +1,14 @@
 <!DOCTYPE html lang="tr">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">	
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Coda:400,800" rel="stylesheet">
+
 </head>
 
 <div id="topbar">
@@ -284,6 +286,12 @@
             </div>
         </div>
     </div>
+
+</div>
+
+</div>
+<div id="footer">
+    <div class="container">
     <div class="sponsors">
         <div class="sponsorsbuttonleft"><i class="zmdi zmdi-chevron-left"></i></div>
         <div class="sponsorslist">
@@ -294,9 +302,74 @@
         </div>
         <div class="sponsorsbuttonright"><i class="zmdi zmdi-chevron-right"></i></div>
     </div>
+    <div class="footersection">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="footerwhoweare">
+                    <h3>Who We Are</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has</p>
+                    <span><i class="zmdi zmdi-flag"></i>Address 123, Country</span>
+                    <span><i class="zmdi zmdi-smartphone-iphone"></i>(043) 875-9211</span>
+                    <span><i class="zmdi zmdi-email"></i>info@kopasoft.com</span>
+                </div>
 
-</div>
+            </div>
+            <div class="col-lg-4">
 
+                <div class="footercategories">
+                    <h3>Categories</h3>
+                <ul>
+                    <li><a href="#">New collection</a></li>
+                    <li><a href="#">New collection</a></li>
+                    <li><a href="#">New collection</li>
+                    <li><a href="#">Best sellers</a></li>
+                    <li><a href="#">Best sellers</a></li>
+                    <li><a href="#">Best sellers</a></li>
+                    <li><a href="#">Manufacturers</a></li>
+                    <li><a href="#">Manufacturers</a></li>
+                    <li><a href="#">Manufacturers</a></li>
+                    <li><a href="#">Suppliers</a></li>
+                    <li><a href="#">Suppliers</a></li>
+                    <li><a href="#">Suppliers</a></li>
+                    <li><a href="#">New products</a></li>
+                    <li><a href="#">New products</a></li>
+                    <li><a href="#">New products</a></li>
+
+                </ul>
+                </div>
+            </div>
+            <div class="col-lg-4">
+
+                <div class="footerlastesttweet">
+                    <h3>Lastest Tweet</h3>
+                    <ul>
+                        <li><i class="zmdi zmdi-twitter"></i><a href="#">Check out this great #themeforest item for you 'Simpler Landing' http://t.co/LbLwldb6
+                                <br/>2 hours ago</a></li>
+                        <li><i class="zmdi zmdi-twitter"></i><a href="#">Check out this great #themeforest item for you 'Simpler Landing' http://t.co/LbLwldb6
+                                <br/>2 hours ago</a></li>
+                        <li><i class="zmdi zmdi-twitter"></i><a href="#">Check out this great #themeforest item for you 'Simpler Landing' http://t.co/LbLwldb6
+                                <br/>2 hours ago</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <div class="footerbottombar">
+        <div class="container">
+        <div class="footercopyright">Copyrights. © 2017 by Emirhan PERVANLAR</div>
+        <div class="footerbottommenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">My Cart</a></li>
+                <li><a href="#">Checkout</a></li>
+                <li><a href="#">Completed Orders</a></li>
+                <li><a href="#">Contact us</a></li>
+        </div>
+        </div>
+
+    </div>
 </div>
 
 
