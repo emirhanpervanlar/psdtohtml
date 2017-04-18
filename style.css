@@ -1,8 +1,9 @@
 @media screen and (min-width:993px) {
     .container .col-lg-3{position:relative;}
     .container .col-lg-9{margin-left:-40px;position: inherit}
-
-
+    .trendingnowsectionarticle{width:430px;}
+    .trendingnowsectionarticleimg{width:220px;}
+    .trendingnowbanner{margin-left:350px;margin-bottom:-50px;}
 
 }
 
@@ -13,6 +14,23 @@
     .topbarbottom{ margin-top: 100px;}
     .topbarbottomlatest{display:none;}
     .slidercontent{display:none;}
+    .trendingnowsectionarticleimg{width:155px;}
+    .trendingnowsectionarticle{width:365px;}
+    .trendingnowbanner{margin-left:285px;margin-bottom:-50px;}
+
+}
+@media screen and (max-width:768px) {.trendingnowsectionarticle{width:270px;}
+    .trendingnowsectionarticleimg{width:135px;}
+    .trendingnowsectionarticle{width:346px;}
+    .trendingnowbanner{margin-left:268px;margin-bottom:-50px;}
+
+}
+@media screen and (max-width:576px) {.trendingnowsectionarticle{width:270px;}
+    .trendingnowsectionarticleimg{width:215px;}
+    .trendingnowsectionarticle{width:430px;}
+    .trendingnowbanner{margin-left:415px;margin-bottom:-50px;}
+    .trendingnowsectionarticlecontent{position:absolute;margin-left:255px;margin-top:20px;}
+
 }
 
 /*TOPBAR*/
@@ -22,6 +40,7 @@
 .topbarmenu{float:right;width:83%;height:55px;}
 .topbarsocial{float:right;height:55px;width:230px;margin-top:10px;}
 .topbarsocial li{float:left;list-style-type:none;color:#fff;border-radius:20px;height:30px;width:30px;background:#bcbcbd;margin-left:5px;border:1px solid #a4a4a5;}
+.topbarsocial a:hover li{background:#252525;}
 .topbarsocial li>i{font-size:14px;text-align:center;width:30px;margin-top:8px;}
 .topbarsearch{float:right;width:200px;height:30px;background:#bcbcbd;margin-top:10px;color:#fff;border-radius:20px;}
 .topbarsearch input{float:left;outline:0;width:160px;border:none;background:#bcbcbd;border-radius:20px;margin-top:6px;margin-left:10px;font-size:12px;}
@@ -29,6 +48,8 @@
 .topbarsearch i{font-size:20px;}
 .menu{float:right;width:100%;height:50px;border-top:2px solid rgba(243, 243, 243, 0.5);margin-top:10px;color:#1f1f1f;font-family: 'Coda', cursive;}
 .menu-content{width:82%;float:right;}
+.menu-content a{color:#1f1f1f;}
+.menu-content a:hover {color:#1f1f1f;}
 .menu li{float:left;list-style-type:none;padding-left:30px;padding-right:27px;padding-top:15px;border-right:2px solid rgba(243, 243, 243, 0.5);;height:50px;}
 .menu li:first-child{margin-left:10px;}
 .topbarbottom{float:left;width:100%;height:45px;background:#252525}
@@ -39,6 +60,17 @@
 .shoppingcart span{color:#fff;font-weight:bold;font-size:14px;}
 .shoppingcartarrow{float:left;background:#f71818;width:25px;height:25px;margin-top:10px;text-align:center;}
 .shoppingcartarrow i{line-height:25px;font-size:30px;color:#fff;}
+.shoppinglist{float:right;overflow-y:scroll;padding-top:10px;padding-bottom:10px;display:none;width:210px;max-height:200px;background:#363636;position:absolute;margin-top:45px;}
+.shoppinglistitem{float:left;width:100%;height:55px;border-bottom:1px dashed #fff;line-height:55px;}
+.shoppinglistitemimg{float:left;width:30%;padding-top: 5px;}
+.shoppinglistitemimg img{width:90%;}
+.shoppinglistitemtitle{float:left;width:70%;padding-left:15px;}
+.shoppinglistitemtitle a, .shoppinglistitemtitle a:hover{text-decoration:none;color:#fff;}
+.shoppinglist::-webkit-scrollbar-track
+{   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);  border-radius: 10px;  background-color: #222;}
+.shoppinglist::-webkit-scrollbar{  width: 5px;  background-color: #222;}
+.shoppinglist::-webkit-scrollbar-thumb{    border-radius: 10px;  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);   background-color: #f71818;  }
+
 /*TOPBAR END*/
 
 
@@ -83,7 +115,7 @@
 .sidebarfeaturedarticlebuy i{float:left;line-height:37px;color:#fff;font-size:16px;width:39px;}
 .sidebarfeaturedarticlepgray{float:left;text-decoration:line-through;color:#9c9c9c;font-size:14px;margin-left:20px;}
 .sidebarfeaturedarticlepred{float:left;color:#b90000;font-size:14px;margin-left:25px;}
-.sidebarfeaturedarticlebanner{position:absolute;margin-left:158.5px;margin-top:12px;background:url("img/productbanner.png");width:80px;height:80px;}
+.sidebarfeaturedarticlebanner{margin-left:158.5px;margin-top:12px;position:absolute;background:url("img/productbanner.png");width:80px;height:80px;}
 .sidebarfeaturedarticlebanner p{font-size:16px;font-weight:bold;color:#feffff;font-style:italic;float:right;width:5px; -ms-transform: rotate(45deg); /* IE 9 */
     -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
     transform: rotate(45deg);margin-top:7px;margin-right:36px;}
@@ -98,8 +130,8 @@
 .trendingnowarticle li:first-child{background:url("img/trendingnowbackground.png");width:288px;margin-left:-10px;height:66px;border:none;margin-bottom:-15px;color:#fff;padding-left:35px;}
 .trendingnowarticle li:hover{background:url("img/trendingnowbackground.png");width:288px;margin-left:-10px;height:66px;border:none;margin-bottom:-15px;color:#fff;padding-left:35px;}
 .trendingnowsection{float:left;width:101.5%;min-height:450px;height:auto;background:#f3f3f3;margin-top:10px;}
-.trendingnowsectionarticle{float:left;width:430px;height:265px;background:url("img/background2.png") }
-.trendingnowsectionarticleimg{float:left;height:100%;width:222px;}
+.trendingnowsectionarticle{float:left;height:265px;background:url("img/background2.png") }
+.trendingnowsectionarticleimg{float:left;height:100%;}
 .trendingnowsectionarticleimg img{margin-left:30px;width:204px;height:246px;margin-top:-12px;}
 .trendingnowsectionarticlecontent{float:left;width:208px;padding-left:25px;}
 .trendingnowsectionarticlecontent h2{float:left;width:100%;font-family: Coda;color:#272727;font-size:20px;}
@@ -111,7 +143,7 @@
     }
 .trendingnowbuy i{float:left;line-height:37px;color:#fff;font-size:16px;width:39px;}
 .trendingnowcontentfooter span{margin-top:20px;text-align:center;float:left;height:37px;line-height:37px;width:84px;margin-left:1px;background:#e1e1e1;font-family:arial;font-size:12px;font-weight: bold;}
-.trendingnowbanner{margin-left:350px;margin-bottom:-50px;background:url("img/trendingnowsectionbanner.png");width:80px;height:80px;}
+.trendingnowbanner{background:url("img/trendingnowsectionbanner.png");width:80px;height:80px;}
 .trendingnowbanner p{font-size:16px;font-weight:bold;color:#feffff;font-style:italic;float:right;width:5px; -ms-transform: rotate(45deg); /* IE 9 */
     -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
     transform: rotate(45deg);margin-top:7px;margin-right:36px;}
