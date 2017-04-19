@@ -2,6 +2,7 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
@@ -91,10 +92,12 @@
 
         </div>
     </div>
+</div>
+
 
 
 <div id="homepage">
-</div>
+
     <div id="slider">
         <div class="sliderleft">
             <div class="sliderleftbutton">
@@ -119,7 +122,7 @@
 
         <div class="row">
 
-            <div class="col-md-4 col-lg-3">
+            <div class="col-md-4 col-lg-3 ">
                 <div class="homesidebar">
                     <div class="homesidebarfeatured">
 
