@@ -13,16 +13,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Coda:400,800" rel="stylesheet">
-    <script>
-        $(document).ready(function(){
+    <script>    $(document).ready(function(){
             $(".shoppingcartarrow").click(function(){
                 $(".shoppinglist").toggle();
             });
-        });
+            $('.productrevandcomtopbar ul li:first').addClass('productrevandcomtopbaractive');
+            $('.productrevandcomtopbar ul li').click(function(){
+               $('.productrevandcomtopbar ul li').removeClass('productrevandcomtopbaractive');
+                $(this).addClass('productrevandcomtopbaractive');
+            });
+
+            $('.commentstars i').click(function()
+            {
+                var indis = $(this).index()+1;
+                window.alert(indis+" Puan Verdiniz!");
+            });
 
 
 
-    </script>
+            $('.productdetailsimgsarticle:first').addClass('productimgactive');
+            $('.productdetailsimgsarticle').click(function()
+                {
+                    $('.productdetailsimgsarticle').removeClass('productimgactive');
+                    $(this).addClass('productimgactive');
+                    var src = $(this).find('img').attr("src");
+                    $('.productfirstimage').attr("src",src);    });    });    </script>
 
 </head>
 <div id="topbar">
@@ -37,12 +52,12 @@
                 </form>
             </div>
             <div class="topbarsocial">
-                <a href="#"><li><i class="zmdi zmdi-facebook"></i></li></a>
-                <a href="#"><li><i class="zmdi zmdi-twitter"></i></li></a>
-                <a href="#"><li><i class="zmdi zmdi-dribbble"></i></li></a>
-                <a href="#"><li><i class="zmdi zmdi-lastfm"></i></li></a>
-                <a href="#"><li><i class="zmdi zmdi-linkedin"></i></li></a>
-                <a href="#"><li><i class="zmdi zmdi-tumblr"></i></li></a>
+                <a href="#"><li class="p1"><i class="zmdi zmdi-facebook"></i></li></a>
+                <a href="#"><li class="p2"><i class="zmdi zmdi-twitter"></i></li></a>
+                <a href="#"><li class="p3"><i class="zmdi zmdi-dribbble"></i></li></a>
+                <a href="#"><li class="p4"><i class="zmdi zmdi-lastfm"></i></li></a>
+                <a href="#"><li class="p5"><i class="zmdi zmdi-linkedin"></i></li></a>
+                <a href="#"><li class="p6"><i class="zmdi zmdi-tumblr"></i></li></a>
             </div>
         </div>
     </div>
@@ -109,24 +124,219 @@
         <div class="productdetails">
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="productdetailsfirstimg">
-                        <img src="img/productdetailsfirstimg.png" alt="productdetailsfirstimg">
+                    <div class="productdetailsimage"><div class="productdetailsfirstimg">
+                        <div class="productdetailsprice">£19.99</div>
+                        <img class="productfirstimage" src="img/productdetailsfirstimg.png" alt="productdetailsfirstimg">
                     </div>
                     <div class="productdetailsimgs">
-                    <div class="productdetailsimgsarticle"><img src="img/productdetailsfirstimg.png" alt="productdetailsfirstimg"></div>
                         <div class="productdetailsimgsarticle"><img src="img/productdetailsfirstimg.png" alt="productdetailsfirstimg"></div>
-                        <div class="productdetailsimgsarticle"><img src="img/productdetailsfirstimg.png" alt="productdetailsfirstimg"></div>
-                        <div class="productdetailsimgsarticle"><img src="img/productdetailsfirstimg.png" alt="productdetailsfirstimg"></div>
+                    <div class="productdetailsimgsarticle"><img src="img/product1img1.png" alt="productdetailsfirstimg"></div>
+                <div class="productdetailsimgsarticle"><img src="img/product1img2.png" alt="productdetailsfirstimg"></div>
+            <div class="productdetailsimgsarticle"><img src="img/product1img3.png" alt="productdetailsfirstimg"></div>
+                    </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
-
-                    edxed
+                    <div class="productdetailscontent">
+                        <h2>Lorem Ipsum Text - H2 - Heading</h2>
+                        <span>Posted in <b>Tee Shirts</b></span>
+                        <div class="productdetailscontentdec">
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam. Praesent mauris ante, elementum et, bibendum at, posuere sit amet, nibh. Duis tincidunt lectus quis dui viverra vestibulum.</p>
+                        </div>
+                        <div class="productdetailscontentstock">
+                            <p>In Stock – 53 available</p>
+                            <form action="" method="post">
+                                <input type="number" name="productpiece" value="1" min="1" />
+                                <button type="submit" name="addtocart"><i class="zmdi zmdi-shopping-cart-plus"></i>Add to cart</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div>
+        <div class="productrevandcom">
+            <div class="productrevandcomsection">
+                <div class="productrevandcomtopbar">
+                    <ul>
+                        <li>REVIEWS (0)</li>
+                        <li>SECOND TAB</li>
+                        <li>THIRD TAB</li>
+                    </ul>
+                    <div class="productrevandcomtopbarline"></div>
+                </div>
+            <h2>Reviews - H2 - Heading</h2>
+            <div class="productrevandcomarticle">
+                <div class="row">
+                    <div class="col-lg-1">
+                        <img src="img/productuserimg.png" alt="productuserimg" class="productuserimg">
+
+                    </div>
+
+                    <div class="col-lg-11">
+                        <div class="productrevandcomcontent">
+                            <div class="commentrow"></div>
+                            <div class="productrevandcomcontenttop">
+                                <div class="commentusername">Angelina Jolie</div>
+                                <div class="commentuserraiting"></div>
+                            </div>
+                            <div class="commentusertext"><p>
+                                   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.
+                                </p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-lg-1">
+                        <img src="img/productuserimg.png" alt="productuserimg" class="productuserimg">
+
+                    </div>
+                    <div class="col-lg-11">
+                        <div class="productrevandcomcontent">
+                            <div class="commentrow"></div>
+                            <div class="productrevandcomcontenttop">
+                                <div class="commentusername">Angelina Jolie</div>
+                                <div class="commentuserraiting"></div>
+                            </div>
+                            <div class="commentusertext"><p>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.
+                                </p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-1">
+                        <img src="img/productuserimg.png" alt="productuserimg" class="productuserimg">
+
+                    </div>
+                    <div class="col-lg-11">
+                        <div class="productrevandcomcontent">
+                            <div class="commentrow"></div>
+                            <div class="productrevandcomcontenttop">
+                                <div class="commentusername">Angelina Jolie</div>
+                                <div class="commentuserraiting"></div>
+                            </div>
+                            <div class="commentusertext"><p>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.
+                                </p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-1">
+                        <img src="img/productuserimg.png" alt="productuserimg" class="productuserimg">
+
+                    </div>
+                    <div class="col-lg-11">
+                        <div class="productrevandcomcontent">
+                            <div class="commentrow"></div>
+                            <div class="productrevandcomcontenttop">
+                                <div class="commentusername">Angelina Jolie</div>
+                                <div class="commentuserraiting"></div>
+                            </div>
+                            <div class="commentusertext"><p>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.
+                                </p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-1">
+                        <img src="img/productuserimg.png" alt="productuserimg" class="productuserimg">
+
+                    </div>
+                    <div class="col-lg-11">
+                        <div class="productrevandcomcontent">
+                            <div class="commentrow"></div>
+                            <div class="productrevandcomcontenttop">
+                                <div class="commentusername">Angelina Jolie</div>
+                                <div class="commentuserraiting"></div>
+                            </div>
+                            <div class="commentusertext"><p>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam cursus. Morbi ut mi. Nullam enim leo, egestas id, condimentum at, laoreet mattis, massa. Sed eleifend nonummy diam.
+                                </p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="addcomment">
+                <h2>ADD COMMENT</h2>
+                <form method="" action="">
+                    <ul>
+                        <li>
+                            <label for="name">Name (<b>Required</b>):</label>
+                            <input type="text" name="name"/>
+                        </li>
+                        <li>
+                            <label for="mail">Email (<b>Required</b>):</label>
+                            <input type="text" name="mail"/>
+                        </li>
+                        <li>
+                            <label>Raiting (<b>Required</b>):</label>
+                            <div class="commentstars">
+                            <i class="zmdi zmdi-star"></i>
+                            <i class="zmdi zmdi-star"></i>
+                            <i class="zmdi zmdi-star"></i>
+                            <i class="zmdi zmdi-star"></i>
+                            <i class="zmdi zmdi-star"></i>
+                            </div>
+
+                        </li>
+                    </ul>
+                    <ul>
+                          <label for="commenttext">Your comment (<b>Required</b>):</label>
+                          <textarea class="commenttextarea" name="commenttext" ></textarea>
+                    </ul>
+                    <button type="submit" name="addcommentbtn">Submit</button>
+                </form>
 
             </div>
+            </div>
+        </div>
+    <div class="relatedpost">
+        <div class="relatedpostsection">
+            <div class="relatedposttopbar">
+                <h2>RELATED PRODUCTS</h2>
+                <div class="relatedposttopbarline"></div>
+            </div>
+                    <div class="relatedpostarticle">
+                        <div class="relatedpostimg">
+                            <img src="img/productitem2img.png" alt="productitem2img">
+                        </div>
+                        <h3>Lorem ipsum dolor sit   </h3>
+                        <p>$34.99</p>
+                        <i class="zmdi zmdi-shopping-cart-plus"></i>
+                    </div>
+                <div class="relatedpostarticle">
+                    <div class="relatedpostimg">
+                        <img src="img/productitem2img.png" alt="productitem2img">
+                    </div>
+                    <h3>Lorem ipsum dolor sit   </h3>
+                    <p>$34.99</p>
+                    <i class="zmdi zmdi-shopping-cart-plus"></i>
+                </div>
+                <div class="relatedpostarticle">
+                    <div class="relatedpostimg">
+                        <img src="img/productitem2img.png" alt="productitem2img">
+                    </div>
+                    <h3>Lorem ipsum dolor sit   </h3>
+                    <p>$34.99</p>
+                    <i class="zmdi zmdi-shopping-cart-plus"></i>
+                </div>
+                <div class="relatedpostarticle">
+                    <div class="relatedpostimg">
+                        <img src="img/productitem2img.png" alt="productitem2img">
+                    </div>
+                    <h3>Lorem ipsum dolor sit   </h3>
+                    <p>$34.99</p>
+                    <i class="zmdi zmdi-shopping-cart-plus"></i>
+                </div>
+
+
 
         </div>
+    </div>
+
 
     </div>
 
